@@ -1,260 +1,923 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dipak Kinholkar</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all,follow">
-    <!-- Bootstrap CSS-->
-
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <!-- Google fonts - Montserrat for headings, Cardo for copy-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
-    <!-- Lightbox-->
-
-    <link rel="stylesheet" href="vendor/lightbox2/css/lightbox.min.css">
-    <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- Favicon-->
-
-    <link rel="shortcut icon" href="img/d1.png">
-    <!-- Leaflet CSS - For the map-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
-    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-  </head>
-  <body>
-    <section id="intro" style="background-image: url('img/dipak2.jpg');" class="intro">       
-      <div class="overlay"></div>
-      <div class="content">
-        <div class="container clearfix">
-          <div class="row">
-            <div class="col-lg-8 col-md-12 mx-auto">
-              <p class="italic">Oh, hello, nice to meet you!</p>
-              <h1>I am Dipak Kinholkar.</h1>
-              <p class="italic">I am a ready to be your portfolio, telling your stories and short presentations.</p>
+<html lang = "zxx">
+    <head>
+        <meta charset="utf-8">
+        <title>Dipak Kinholkar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- font awesome -->
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <!--main css file-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- responsive css -->
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+        <!--default color skin-->
+        <link rel="stylesheet" type="text/css" href="css/skins/color-1.css">
+        <!-- stylr switcher - for demo purposes only -->
+        <link rel="stylesheet" type="text/css" class="alternate-style" title="color-1" href="css/skins/color-1.css">
+        <link rel="stylesheet" type="text/css" class="alternate-style" title="color-2" href="css/skins/color-2.css" disabled>
+        <link rel="stylesheet" type="text/css" class="alternate-style" title="color-3" href="css/skins/color-3.css" disabled>
+        <link rel="stylesheet" type="text/css" class="alternate-style" title="color-4" href="css/skins/color-4.css" disabled>
+        <link rel="stylesheet" type="text/css" class="alternate-style" title="color-5" href="css/skins/color-5.css" disabled>
+        <link rel="stylesheet" type="text/css" href="css/style-switcher.css">
+    </head>
+    <body>
+        <!-- preloader start -->
+        <div class="preloader">
+            <div class="box">
+                <div></div><div></div><div></div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <!-- intro end-->
-    <!-- navbar-->
-    <header class="header">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container"><a href="#intro" class="navbar-brand link-scroll"></a>
-          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
-          <div id="navbarSupportedContent" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a href="#intro" class="nav-link link-scroll">Home</a></li>
-              <li class="nav-item"><a href="#about" class="nav-link link-scroll">About </a></li>
-              <li class="nav-item"><a href="#services" class="nav-link link-scroll">Services</a></li>
-              <li class="nav-item"><a href="#portfolio" class="nav-link link-scroll">Portfolio</a></li>
-              <li class="nav-item"><a href="#text" class="nav-link link-scroll">Text</a></li>
-              <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- about-->
-    <section id="about" class="text">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2 class="heading">About me</h2>
-            <p class="lead">Hello There,</p>
-            <p>I'm a Software Developer Enthusiast and an open source contributor.<br> I'm currently a student at College Of Computer Science and Information Technology (COCSIT), Latur affiliated with SRTM University, Nanded, India, where I have been completed my Bachelor's of Computer Science (B.Sc).Now I am pursuing Master's in Computer Science.
+        <!-- preloader end -->
+        <!-- header start-->
+        <header class="header">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="logo">
+                        <a href="index.html">B</a>
+                    </div>
+                    <div class="hamburger-btn outer-shadow hover-in-shadow">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+        <!-- navigation menu start -->
+        <nav class="nav-menu">
+            <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
+            <div class="nav-menu-inner">
+                <ul>
+                    <li><a href="#home" class="link-item inner-shadow active">home</a></li>
+                    <li><a href="#about" class="link-item outer-shadow hover-in-shadow">about</a></li>
+                    <li><a href="#services" class="link-item outer-shadow hover-in-shadow">services</a></li>
+                    <li><a href="#portfolio" class="link-item outer-shadow hover-in-shadow">portfolio</a></li>
+                    <li><a href="#testimonial" class="link-item outer-shadow hover-in-shadow">testimonials</a></li>
+                    <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">contact</a></li>
+                </ul>
+            </div>
+            <!-- copyright text -->
+            <p class="copyright-text">&copy; 2020 The Portfolio</p>
+        </nav>
+        <div class="fade-out-effect"></div>
+        <!-- navigation menu end -->
+        <!-- home section start -->
+        <section class="home-section section active" id="home">
+            <!-- effect wrap start -->
+            <div class="effect-wrap">
+                <div class="effect effect-1"></div>
+                <div class="effect effect-2">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </div>
+                <div class="effect effect-3"></div>
+                <div class="effect effect-4"></div>
+                <div class="effect effect-5">
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+                </div>
+            </div>
+            <!-- effect wrap end -->
+            <div class="container">
+                <div class="row full-screen align-items-center">
+                    <div class="home-text">
+                        <p>Hello</p>
+                        <h2>I'm Dipak Kinholkar</h2>
+                        <h1>Software Developer</h1>
+                        <a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
+                    </div>
+                    <div class="home-img">
+                        <div class="img-box inner-shadow">
+                            <img src="img/d1.png" class="outer-shadow" alt="prodile-pic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- home secction end -->
+        <!-- about section start -->
+        <section class="about-section section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2 data-heading="main info">About me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about-img">
+                        <div class="img-box inner-shadow">
+                            <img src="img/d1.png" class="outer-shadow" alt="profile-pic">
+                        </div>
+                        <!-- social link start -->
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/dipakkinholkar" class="outer-shadow hover-in-shadow"><i class="fab fa-facebook-f"></i></a>
+                            <!-- <a href="#" class="outer-shadow hover-in-shadow"><i class="fab fa-twitter"></i></a> -->
+                            <a href="https://instagram.com/dipakkinholkar" class="outer-shadow hover-in-shadow"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/dipakkinholkar" class="outer-shadow hover-in-shadow"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/dipakkinholkar" class="outer-shadow hover-in-shadow"><i class="fab fa-github"></i></a>
+                        </div>
+                        <!-- social link end -->
+                    </div>
+                    <div class="about-info">
+                        <p><span>Hi! I'm Dipak Kinholkar. I'm a Software Developer. </span>I have a keen interest to work in the field of Software Development . I am looking for opportunities for internships related to my areas of interests. Willingness to learn something new and always ready to give my best for my growth. Having good communication skills helps me in getting along with new people easily. Looking forward to making an impact on whatever I do and gain experience that would help me as a professional to grow professionally and individually</p>
+                        <a href="Dipak Resume.pdf" class="btn-1 outer-shadow hover-in-shadow">Download CV</a>
+                        <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Hire Me</a>
+                    </div>
+                </div>
+                <!-- about tabs start -->
+                <div class="row">
+                    <div class="about-tabs">
+                        <span class="tab-item outer-shadow active" data-target=".skills">skills</span>
+                        <span class="tab-item" data-target=".experience">experience</span>
+                        <span class="tab-item" data-target=".education">education</span>
+                        <span class="tab-item" data-target=".publication">publication</span>
+                    </div>
+                </div>
+                <!-- about tabs end -->
+                <!-- skills start -->
+                <div class="row">
+                    <div class="skills tab-content active">
+                        <div class="row">
+                            <!-- skill item start -->
+                            <div class="skill-item" >
+                                <p>Python</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: calc(80% - 14px)">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- skill item end -->
+                            <!-- skill item start -->
+                            <div class="skill-item" >
+                                <p>HTML</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: calc(85% - 14px)">
+                                        <span>85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- skill item end -->
+                            <!-- skill item start -->
+                            <div class="skill-item" >
+                                <p>CSS</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: calc(70% - 14px)">
+                                        <span>70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- skill item end -->
+                            <!-- skill item start -->
+                            <div class="skill-item" >
+                                <p>javascript</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: calc(80% - 14px)">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- skill item end -->
+                            <!-- skill item start -->
+                            <div class="skill-item" >
+                                <p>IOT</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: calc(80% - 14px)">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- skill item end -->
+                            <!-- skill item start -->
+                            <div class="skill-item" >
+                                <p>SQL</p>
+                                <div class="progress inner-shadow">
+                                    <div class="progress-bar" style="width: calc(75% - 14px)">
+                                        <span>75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- skill item end -->
+                        </div>
+                    </div>
+                </div>
+                <!-- skills end -->
+                <!-- experience start -->
+                <div class="row">
+                    <div class="experience tab-content">
+                        <div class="row">
+                            <div class="timeline">
+                                <div class="row">
+                                    <!-- timeline item start -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="fas fa-briefcase icon"></i>
+                                            <span>Jun, 2020 - Present</span>
+                                            <h3>software developer intern</h3>
+                                            <h4>Blue Eye Soft Corp, United States.</h4>
+                                            <p>Android App Development Project.</p>
+                                        </div>
+                                    </div>
+                                    <!-- timeline item end -->
+                                    <!-- timeline item start -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="fas fa-briefcase icon"></i>
+                                            <span>May, 2020 - May, 2020</span>
+                                            <h3>Student Intern</h3>
+                                            <h4>Shah & Anchor Kutchhi Engineering College, India.</h4>
+                                            <p>Research and IOT project</p>
+                                        </div>
+                                    </div>
+                                    <!-- timeline item end -->
+                                    <!-- timeline item start -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="fas fa-briefcase icon"></i>
+                                            <span>Dec, 2019 - Mar, 2020</span>
+                                            <h3>Software Developer Intern</h3>
+                                            <h4>GCV Life Pvt Ltd, India.</h4>
+                                            <p>Python project</p>
+                                        </div>
+                                    </div>
+                                    <!-- timeline item end -->
+                                    <!-- timeline item start -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="fas fa-briefcase icon"></i>
+                                            <span>Dec, 2019 - Jan, 2020</span>
+                                            <h3>Student Intern</h3>
+                                            <h4>Shah & Anchor Kutchhi Engineering College, India.</h4>
+                                            <p>IOT project</p>
+                                        </div>
+                                    </div>
+                                    <!-- timeline item end -->
+                                    <!-- timeline item start -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="fas fa-briefcase icon"></i>
+                                            <span>Nov, 2018 - Jan, 2019</span>
+                                            <h3>Student Intern</h3>
+                                            <h4>Shah & Anchor Kutchhi Engineering College, India.</h4>
+                                            <p>Website Developer</p>
+                                        </div>
+                                    </div>
+                                    <!-- timeline item end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- experience end -->
 
- </p>
-           
-          </div>
-          <div class="col-lg-5 mx-auto">
-            <p><center><img src="https://avatars.githubusercontent.com/u/39441178?s=460&u=d5142c81da70d4aba7f71e4bf2b011699e04d99b&v=4" alt="" class="img-fluid rounded-circle"></center></p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- about end-->
-    <!-- Services-->
-    <section id="services" style="background-color: #eee">
-      <div class="container">
-        <div class="row services">
-          <div class="col-lg-12">
-            <h2 class="heading">Services</h2>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="box">
-                  <div class="icon"><i class="fa fa-desktop"></i></div>
-                  <h5>Webdesign</h5>
-                  <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
+                <!-- education start -->
+                <div class="row">
+                    <div class="education tab-content">
+                        <div class="row">
+                            <div class="timeline">
+                                <div class="row">
+                                    <!-- timeline item start -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="fas fa-graduation-cap icon"></i>
+                                            <span>2017 - Present</span>
+                                            <h3>Bachelor of Engineering in Information Technology</h3>
+                                            <h4>8.66 cgpa</h4>
+                                            <p>Shah & Anchor Kutchhi Engineering College, India.</p>
+                                        </div>
+                                    </div>
+                                    <!-- timeline item end -->
+                                    <!-- timeline item start -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="fas fa-graduation-cap icon"></i>
+                                            <span>2016 - 2017</span>
+                                            <h3>Higher Secondary Certificate Examination</h3>
+                                            <h4>76.40%</h4>
+                                            <p>The SIO's Vani Vidyalaya, India.</p>
+                                        </div>
+                                    </div>
+                                    <!-- timeline item end -->
+                                    <!-- timeline item start -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="fas fa-graduation-cap icon"></i>
+                                            <span>2014 - 2015</span>
+                                            <h3>Secondary School Certificate Examination</h3>
+                                            <h4>87.40%</h4>
+                                            <p>The SIO's Vani Vidyalaya, India.</p>
+                                        </div>
+                                    </div>
+                                    <!-- timeline item end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-4">
-                <div class="box">
-                  <div class="icon"><i class="fa fa-print"></i></div>
-                  <h5>Print</h5>
-                  <p>Advantage old had otherwise sincerity dependent additions. It in adapted natural.</p>
+                <!-- education end -->
+                <!-- publication start -->
+                <div class="row">
+                    <div class="publication tab-content">
+                        <div class="row">
+                            <div class="timeline">
+                                <div class="row">
+                                    <!-- timeline item start -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="fa fa-book-reader icon"></i>
+                                            <span>Dec - 2020</span>
+                                            <h3><a href="#" class="pub-link btn-1 outer-shadow hover-in-shadow">IOT  based Temperature Monitoring System</a></h3>
+                                            <h4>Authors: Mr. Utsav Gada, Mr. Siddhant Kadam</h4>
+                                            <p>"IEEE 4th Biennial International Conference on Nascent Technologies in Engineering ICNTE, 2020"</p>
+                                        </div>
+                                    </div>
+                                    <!-- timeline item end -->
+                                    <!-- timeline item start -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-item-inner outer-shadow">
+                                            <i class="fas fa-book-reader icon"></i>
+                                            <span>Sep - 2019</span>
+                                            <h3><a href=" http://www.jetir.org/view?paper=JETIR1907D75" class="pub-link btn-1 outer-shadow hover-in-shadow">Arduino based Home Automation System</a></h3>
+                                            <h4>Authors: Mr. Utsav Gada, Prof. Archana Chaugule</h4>
+                                            <p>"Internamtional Journal of Emerging Technologies and Innovative Research, 2019."</p>
+                                        </div>
+                                    </div>
+                                    <!-- timeline item end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-4">
-                <div class="box">
-                  <div class="icon"><i class="fa fa-globe"></i></div>
-                  <h5>SEO and SEM</h5>
-                  <p>Am terminated it excellence invitation projection as. She graceful shy. </p>
-                </div>
-              </div>
+                <!-- publication end -->
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Services end-->
-    
-    <!-- Portfolio / gallery-->
-    <section id="portfolio" class="gallery">
-      <div class="container clearfix">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="row">
-              <div class="col-md-12 col-lg-8">
-                <h2 class="heading">Portfolio</h2>
-                <p>Put your portfolio or gallery images here for example. Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. </p>
-              </div>
+        </section>
+        <!-- about section end -->
+        <!-- service section start -->
+        <section class="service-section section" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2 data-heading="Services">What I do</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- service item start -->
+                    <div class="service-item">
+                        <div class="service-item-inner outer-shadow">
+                            <div class="icon inner-shadow">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>Android Development</h3>
+                            <p>Flutter, Android Studio</p>
+                        </div>
+                    </div>
+                    <!-- service item end -->
+                    <!-- service item start -->
+                    <div class="service-item">
+                        <div class="service-item-inner outer-shadow">
+                            <div class="icon inner-shadow">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>Web design</h3>
+                            <p>Wordpress, HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+                    <!-- service item end -->
+                    <!-- service item start -->
+                    <div class="service-item">
+                        <div class="service-item-inner outer-shadow">
+                            <div class="icon inner-shadow">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>Backend Developer</h3>
+                            <p>Firebase Realtime Database, SQLite</p>
+                        </div>
+                    </div>
+                    <!-- service item end -->
+                    <!-- service item start -->
+                    <div class="service-item">
+                        <div class="service-item-inner outer-shadow">
+                            <div class="icon inner-shadow">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Clean code</h3>
+                            <p>Easy to understand along with proper documentation</p>
+                        </div>
+                    </div>
+                    <!-- service item end -->
+                    <!-- service item start -->
+                    <div class="service-item">
+                        <div class="service-item-inner outer-shadow">
+                            <div class="icon inner-shadow">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3>Research & Development</h3>
+                            <p>Research and publish papers in Journal</p>
+                        </div>
+                    </div>
+                    <!-- service item end -->
+                    <!-- service item start -->
+                    <div class="service-item">
+                        <div class="service-item-inner outer-shadow">
+                            <div class="icon inner-shadow">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h3>Great support</h3>
+                            <p>Good Communication Skills</p>
+                        </div>
+                    </div>
+                    <!-- service item end -->
+                </div>
             </div>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="box"><a href="       " data-lightbox="image-1" data-title="    " class="has-border"><img src="    " alt="image" class="img-fluid"></a></div>
-              </div>
-              <div class="col-md-4">
-                <div class="box"><a href="       " data-lightbox="image-1" data-title="    " class="has-border"><img src="    " alt="image" class="img-fluid"></a></div>
-              
-              </div>
-              <div class="col-md-4">
-              <div class="box"><a href="       " data-lightbox="image-1" data-title="    " class="has-border"><img src="    " alt="image" class="img-fluid"></a></div>
+        </section>
+        <!-- service section end -->
+        <!-- portfolio section start -->
+        <section class="portfolio-section section" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2 data-heading="portfolio">Latest Works</h2>
+                    </div>
+                </div>
+                <!-- portfolio filter start -->
+                <div class="row">
+                    <div class="portfolio-filter">
+                        <span class="filter-item outer-shadow active" data-target="all">all</span>
+                        <span class="filter-item" data-target="web-application">web application</span>
+                        <span class="filter-item" data-target="software">software</span>
+                        <span class="filter-item" data-target="mobile-app">mobile app</span>
+                        <span class="filter-item" data-target="e-commerce">e commerce</span>
+                        <span class="filter-item" data-target="machine-learning">Machine Learning</span>
+                    </div>
+                </div>
+                <!-- portfolio filter end -->
+                <!-- portfolio items start -->
+                <div class="row portfolio-items">
+                    <!-- portfolio item start -->
+                    <div class="portfolio-item" data-category="web-application">
+                        <div class="portfolio-item-inner outer-shadow">
+                            <div class="portfolio-item-img">
+                                <img src="img/portfolio/thumb/project-1.PNG" alt="portfolio" 
+                                data-screenshots="img/portfolio/large/project-1/portfolio-1.PNG,
+                                img/portfolio/large/project-1/portfolio-2.PNG,
+                                img/portfolio/large/project-1/portfolio-3.PNG,
+                                img/portfolio/large/project-1/portfolio-4.PNG,
+                                img/portfolio/large/project-1/portfolio-5.PNG,
+                                img/portfolio/large/project-1/portfolio-6.PNG,
+                                img/portfolio/large/project-1/portfolio-7.PNG">
+                                <!-- view project btn -->
+                                <span class="view-project">view project</span>
+                            </div>
+                                <p class="portfolio-item-title">personal portfolio</p>
+                                <!-- portfolio item details start-->
+                                <div class="portfolio-item-details">
+                                    <div class="row">
+                                        <div class="description">
+                                            <h3>Project Brief:</h3>
+                                            <p>Personal Portfolio for presenting my projects and achievements.</p>
+                                        </div>
+                                        <div class="info">
+                                            <h3>Project info</h3>
+                                            <ul>
+                                                <li>Date - <span>2021</span></li>
+                                                <!-- <li>Client - <span>xyz</span></li> -->
+                                                <li>Tools - <span>html, css, javascript</span></li>
+                                                <li>Web - <span><a href="https://bhavya-02022000.github.io/resume/">Dipak Joshi Portfolio</a></span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- portfolio item details end -->
+                        </div>
+                    </div>
+                    <!-- portfolio item end -->
+                    <!-- portfolio item start -->
+                    <div class="portfolio-item" data-category="e-commerce">
+                        <div class="portfolio-item-inner outer-shadow">
+                            <div class="portfolio-item-img">
+                                <img src="img/portfolio/thumb/project-2.PNG" alt="portfolio" 
+                                data-screenshots="img/portfolio/large/project-2/portfolio-1.PNG,
+                                img/portfolio/large/project-2/portfolio-2.PNG,
+                                img/portfolio/large/project-2/portfolio-3.PNG,
+                                img/portfolio/large/project-2/portfolio-4.PNG,
+                                img/portfolio/large/project-2/portfolio-5.PNG,
+                                img/portfolio/large/project-2/portfolio-6.PNG"
+                                >
+                                <!-- view project btn -->
+                                <span class="view-project">view project</span>
+                            </div>
+                                <p class="portfolio-item-title">Utsav Creationss</p>
+                                <!-- portfolio item details start-->
+                                <div class="portfolio-item-details">
+                                    <div class="row">
+                                        <div class="description">
+                                            <h3>Project Brief:</h3>
+                                            <p>Developed an E-commerce website for selling Jewellery and other accessories.</p>
+                                        </div>
+                                        <div class="info">
+                                            <h3>Project info</h3>
+                                            <ul>
+                                                <li>Date - <span>2020</span></li>
+                                                <li>Client - <span>utsav creationss</span></li>
+                                                <li>Tools - <span>wordpress</span></li>
+                                                <li>Web - <span><a href="https://www.utsavcreationss.com/">utsavcreationss.com</a></span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- portfolio item details end -->
+                        </div>
+                    </div>
+                    <!-- portfolio item end -->
+                    <!-- portfolio item start -->
+                    <div class="portfolio-item" data-category="mobile-app">
+                        <div class="portfolio-item-inner outer-shadow">
+                            <div class="portfolio-item-img">
+                                <img src="img/portfolio/thumb/project-3.PNG" alt="portfolio" 
+                                data-screenshots="img/portfolio/large/project-3/portfolio-0.PNG,
+                                img/portfolio/large/project-3/portfolio-1.jpeg,
+                                img/portfolio/large/project-3/portfolio-2.jpeg,
+                                img/portfolio/large/project-3/portfolio-3.jpeg,
+                                img/portfolio/large/project-3/portfolio-4.jpeg,
+                                img/portfolio/large/project-3/portfolio-5.jpeg,
+                                img/portfolio/large/project-3/portfolio-6.jpeg,
+                                img/portfolio/large/project-3/portfolio-7.jpeg,
+                                img/portfolio/large/project-3/portfolio-8.jpeg,
+                                img/portfolio/large/project-3/portfolio-9.jpeg,
+                                img/portfolio/large/project-3/portfolio-10.jpeg"
+                                >
+                                <!-- view project btn -->
+                                <span class="view-project">view project</span>
+                            </div>
+                                <p class="portfolio-item-title">Covid Protect App</p>
+                                <!-- portfolio item details start-->
+                                <div class="portfolio-item-details">
+                                    <div class="row">
+                                        <div class="description">
+                                            <h3>Project Brief:</h3>
+                                            <p>Admin feature for Covid Protect application to keep a track of health status of members of admin's organisation.</p>
+                                        </div>
+                                        <div class="info">
+                                            <h3>Project info</h3>
+                                            <ul>
+                                                <li>Date - <span>2020</span></li>
+                                                <li>Client - <span>Blue Eye Soft Corp</span></li>
+                                                <li>Tools - <span>flutter, firebase realtime database, node.js</span></li>
+                                                <li>App - <span><a href="https://sakec.ai/">Covid Protect App</a></span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- portfolio item details end -->
+                        </div>
+                    </div>
+                    <!-- portfolio item end -->
+                    <!-- portfolio item start -->
+                    <div class="portfolio-item" data-category="software">
+                        <div class="portfolio-item-inner outer-shadow">
+                            <div class="portfolio-item-img">
+                                <img src="img/portfolio/thumb/project-4.PNG" alt="portfolio" 
+                                data-screenshots="img/portfolio/large/project-4/portfolio-1.PNG,
+                                img/portfolio/large/project-4/portfolio-2.PNG"
+                                >
+                                <!-- view project btn -->
+                                <span class="view-project">view project</span>
+                            </div>
+                                <p class="portfolio-item-title">Deduplicator tool</p>
+                                <!-- portfolio item details start-->
+                                <div class="portfolio-item-details">
+                                    <div class="row">
+                                        <div class="description">
+                                            <h3>Project Brief:</h3>
+                                            <p>A Deduplication system which identifies all the duplicates/ similar records from a given dataset using machine learning algorithms. User can itself train the dataset by giving a few samples of original records and duplicate records and then on the basis of training the whole dataset will work on the algorithm and will generate files containg unique records and similar records clustered. <br>Records such as A kumar, Akshay k, Akshay Kumar will be considered as same record if other attributes are also similar.</p>
+                                        </div>
+                                        <div class="info">
+                                            <h3>Project info</h3>
+                                            <ul>
+                                                <li>Date - <span>2020</span></li>
+                                                <li>Client - <span>GCV Life</span></li>
+                                                <li>Tools - <span>Python, html, eel</span></li>
+                                                <!-- <li>App - <span><a href="https://sakec.ai/">Covid Protect App</a></span></li> -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- portfolio item details end -->
+                        </div>
+                    </div>
+                    <!-- portfolio item end -->
+                    <!-- portfolio item start -->
+                    <div class="portfolio-item" data-category="machine-learning">
+                        <div class="portfolio-item-inner outer-shadow">
+                            <div class="portfolio-item-img">
+                                <img src="img/portfolio/thumb/project-5.PNG" alt="portfolio" 
+                                data-screenshots="img/portfolio/large/project-5/portfolio-1.PNG,
+                                img/portfolio/large/project-5/portfolio-2.PNG,
+                                img/portfolio/large/project-5/portfolio-3.PNG"
+                                >
+                                <!-- view project btn -->
+                                <span class="view-project">view project</span>
+                            </div>
+                                <p class="portfolio-item-title">Car Price Prediction</p>
+                                <!-- portfolio item details start-->
+                                <div class="portfolio-item-details">
+                                    <div class="row">
+                                        <div class="description">
+                                            <h3>Project Brief:</h3>
+                                            <p>A model is developed using Random Forest Regressor for predicting the price of a car based on the parameters such as Year, Showroom price, Kilometers drived, No. of previous owners of car, Fuel type, Dealer or Individual, Transmission type. The model is trained using a dataset available on Kaggle</p>
+                                        </div>
+                                        <div class="info">
+                                            <h3>Project info</h3>
+                                            <ul>
+                                                <li>Date - <span>2021</span></li>
+                                                <!-- <li>Client - <span>GCV Life</span></li> -->
+                                                <li>Tools - <span>Python, flask</span></li>
+                                                <li>Link - <span><a href="https://car-price-prediction-001.herokuapp.com/">Car price prediction</a></span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- portfolio item details end -->
+                        </div>
+                    </div>
+                    <!-- portfolio item end -->
+                    <!-- portfolio item start -->
+                    <div class="portfolio-item" data-category="machine-learning">
+                        <div class="portfolio-item-inner outer-shadow">
+                            <div class="portfolio-item-img">
+                                <img src="img/portfolio/thumb/project-6.PNG" alt="portfolio" 
+                                data-screenshots="img/portfolio/large/project-6/portfolio-1.PNG,
+                                img/portfolio/large/project-6/portfolio-2.PNG,
+                                img/portfolio/large/project-6/portfolio-3.PNG"
+                                >
+                                <!-- view project btn -->
+                                <span class="view-project">view project</span>
+                            </div>
+                                <p class="portfolio-item-title">Flight Fare Prediction</p>
+                                <!-- portfolio item details start-->
+                                <div class="portfolio-item-details">
+                                    <div class="row">
+                                        <div class="description">
+                                            <h3>Project Brief:</h3>
+                                            <p>A model is developed using Random Forest Regressor for predicting the fare of a flight based on the parameters such as Departure Date and Time, Arrival Date and Time, Source, Destination, No. of stops, Airline. The model is trained using a dataset available on Kaggle</p>
+                                        </div>
+                          
+
+
+		              <div class="info">
+                                            <h3>Project info</h3>
+                                            <ul>
+                                                <li>Date - <span>2021</span></li>
+                                                <!-- <li>Client - <span>GCV Life</span></li> -->
+                                                <li>Tools - <span>Python, flask</span></li>
+                                                <li>Link - <span><a href="https://ml-flight-fare-prediction-2021.herokuapp.com/">Flight Fare Prediction</a></span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- portfolio item details end -->
+                        </div>
+                    </div>
+                    <!-- portfolio item end -->
+                </div>
+                <!-- portfolio items end -->
+            </div>
+        </section>
+        <!-- portfolio section end -->
+
+        <!-- testimonial section start -->
+        <section class="testimonial-section section" id="testimonial">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2 data-heading="testimonial">Client speak</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="testi-box">
+                        <div class="testi-slider outer-shadow">
+                            <div class="testi-slider-container">
+                                <!-- testi item start -->
+                                <div class="testi-item active">
+                                    <i class="fas fa-quote-left left"></i>
+                                    <i class="fas fa-quote-right right"></i>
+                                    <p>It is a great pleasure for me to draft this recommendation to Mr a student at Shah and Anchor Kutchhi Engineering college. 
+                                        She has been one of the smartest students in her batch. 
+                                        Being her mini-project mentor and subject teacher, I have observed Dipak for the last 1.5 years and I can proudly say that she is a diligent, intuitive student with a knack to research and learn new skills pertaining to her domain. 
+                                        I have seen her problem-solving approach in practical sessions. 
+                                        She is a curious learner and that is why she took part in various technical events like a deep blue hackathon and smart India hackathon in the year 2019-20. 
+                                        I strongly recommend bhavya and wishing her a very bright and successful future.</p>
+                                        <img src="img/testimonial/Jalpa-Mehta.jpg" alt="testimonial">
+                                        <span>Jalpa Mehta</span>
+                                </div>
+                                <!-- testi item end -->
+                                <!-- testi item start -->
+                                <div class="testi-item">
+                                    <i class="fas fa-quote-left left"></i>
+                                    <i class="fas fa-quote-right right"></i>
+                                    <p>What I like most about Bhavya is her enthusiasm. 
+                                        I have taught her for two years, she is a very hardworking student. 
+                                        She has developed IOT based projects under my guidance one of them is "Home Automation System". 
+                                        Her team participated in the college Hackathon where they developed a very good project for the E-Toilet system and E-Dustbin which was appreciated by all judges, 
+                                        they published a project work paper in a reputed journal. 
+                                        Her team did an Internship under m guidance in our college. 
+                                        Bhavya as a person is very nice, she is always active in discussions, 
+                                        she is very good in her Academic work. 
+                                        I find great insight, creativity and contagious passion for the work, 
+                                        she always gives her best, 
+                                        I am very happy as a teacher and guide for her.</p>
+                                        <img src="img/testimonial/archana-chaugule.jpg" alt="testimonial">
+                                        <span>Archana Chaugule</span>
+                                </div>
+                                <!-- testi item end -->
+                            </div>
+                        </div>
+                        <div class="testi-slider-nav">
+                            <span class="prev outer-shadow hover-in-shadow"><i class="fas fa-angle-left"></i></span>
+                            <span class="next outer-shadow hover-in-shadow"><i class="fas fa-angle-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial section end -->
+
+        <!-- contact section start -->
+        <section class="contact-section section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2 data-heading="Contact">Get In Touch</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- contact item start -->
+                    <div class="contact-item">
+                        <div class="contact-item-inner outer-shadow">
+                            <i class="fas fa-phone"></i>
+                            <span>Phone</span>
+                            <p>+91 </p>
+                        </div>
+                    </div>
+                    <!-- contact item end -->
+                    <!-- contact item start -->
+                    <div class="contact-item">
+                        <div class="contact-item-inner outer-shadow">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!-- contact item end -->
+                    <!-- contact item start -->
+                    <div class="contact-item">
+                        <div class="contact-item-inner outer-shadow">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Address</span>
+                            <p>C-102 Mahalaxmi Tower, Mumbai- 400080</p>
+                        </div>
+                    </div>
+                    <!-- contact item end -->
+                </div>
+
+                <div class="row">
+                    <div class="contact-form">
+                        <form action="javascript:sendMail()" method="POST" id="myForm">
+                            <div class="row">
+                                <div class="w-50">
+                                    <div class="input-group outer-shadow hover-in-shadow">
+                                        <input type="text" placeholder="Name" class="input-control" id="name" required>
+                                    </div>
+                                    <div class="input-group outer-shadow hover-in-shadow">
+                                        <input type="email" placeholder="Email" class="input-control" id="email" required>
+                                    </div>
+                                    <div class="input-group outer-shadow hover-in-shadow">
+                                        <input type="text" placeholder="Subject" class="input-control" id="subject" required>
+                                    </div>
+                                </div>
+                                <div class="w-50">
+                                    <div class="input-group outer-shadow hover-in-shadow">
+                                        <textarea name="msg" class="input-control" placeholder="Message" id="message" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="submit-btn">
+                                    <button type="submit" class="btn-1 outer-shadow hover-in-shadow"></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact section end -->
+
+        <!-- portfolio popup start -->
+        <div class="pp portfolio-popup">
+            <div class="pp-details">
+                <div class="pp-details-inner">
+                    <div class="pp-title">
+                        <h2>personal portfolio</h2>
+                        <p>Category - <span class="pp-project-category">Web Application</span></p>
+                    </div>
+                    <div class="pp-project-details">
+                        <div class="row">
+                            <div class="description">
+                                <h3>Project Brief:</h3>
+                                <p>Personal Portfolio for presenting my projects and achievements.</p>
+                            </div>
+                            <div class="info">
+                                <h3>Project info</h3>
+                                <ul>
+                                    <li>Date - <span>2021</span></li>
+                                    <!-- <li>Client - <span>xyz</span></li> -->
+                                    <li>Tools - <span>html, css, javascript</span></li>
+                                    <li>Web - <span><a href="https://bhavya-02022000.github.io/resume/">Portfolio</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-<div class="row">
-              <div class="col-md-4">
-  <div class="box"><a href="       " data-lightbox="image-1" data-title="    " class="has-border"><img src="    " alt="image" class="img-fluid"></a></div>
-                            </div>
-              <div class="col-md-4">
-                <div class="box"><a href="       " data-lightbox="image-1" data-title="    " class="has-border"><img src="    " alt="image" class="img-fluid"></a></div>
-              </div>
-              <div class="col-md-4">
-                <div class="box"><a href="       " data-lightbox="image-1" data-title="    " class="has-border"><img src="    " alt="image" class="img-fluid"></a></div>
-              </div>
+            <div class="separator"></div>
+
+            <div class="pp-main">
+                <div class="pp-main-inner">
+                    <div class="pp-project-details-btn outer-shadow hover-in-shadow">Project Details<i class="fas fa-plus"></i></div>
+                    <div class="pp-close outer-shadow hover-in-shadow">&times;</div>
+                    <img src="img/portfolio/large/project-1/portfolio-1.PNG" alt="img" class="pp-img outer-shadow">
+                    <div class="pp-counter">1 0f 4</div>
+                </div>
+                <div class="pp-loader">
+                    <div>
+
+                    </div>
+
+                </div>
+                <!-- pp navigation -->
+                <div class="pp-prev"><i class="fas fa-play"></i></div>
+                <div class="pp-next"><i class="fas fa-play"></i></div>
             </div>
-
-          </div>
         </div>
-      </div>
-    </section>
-    <!-- Portfolio / gallery end-->
-    <!-- text page-->
-    <section id="text" class="text-page section-inverse">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2 class="heading">Text page</h2>
-            <div class="row">
-              <div class="col-md-6">
-                <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. </p>
-                <p>Betrayed cheerful declared end and. Questions we additions is extremely incommode. Next half add call them eat face. Age lived smile six defer bed their few. Had admitting concluded too behaviour him she. Of death to or to being other. </p>
-              </div>
-              <div class="col-md-6">
-                <p>Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed. </p>
-                <p>Saw yet kindness too replying whatever marianne. Old sentiments resolution admiration unaffected its mrs literature. Behaviour new set existence dashwoods. It satisfied to mr commanded consisted disposing engrossed. Tall snug do of till on easy. Form not calm new fail. </p>
-              </div>
+        <!-- portfolio popup end -->
+
+        <!-- style switcher start - for demo purposes only -->
+        <div class="style-switcher outer-shadow">
+            <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+                <i class="fas fa-cog fa-spin"></i>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- text page end-->
-    <!-- contact-->
-    
-<section id="contact" style="background-color: #fff;" class="text-page pb-4"> 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2 class="heading">Contact</h2>
-            <div class="row">
-              <div class="col-lg-6">
-                <form id="contact-form" method="post" action="dipak100kadam@gmail.com" class="contact-form">
-                  <div class="controls">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="name">Your firstname *</label>
-                          <input type="text" name="name" placeholder="Enter your firstname" required="required" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="surname">Your lastname *</label>
-                          <input type="text" name="surname" placeholder="Enter your  lastname" required="required" class="form-control">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="surname">Your email *</label>
-                      <input type="email" name="email" placeholder="Enter your  email" required="required" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label for="surname">Your message for us *</label>
-                      <textarea rows="4" name="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
-                    </div>
-                    <div class="text-center">
-                      <input type="submit" name="name" value="Send message" class="btn btn-outline-primary btn-block">
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div class="col-lg-6">
-                <p>Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed. </p>
-                <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. </p>
-                <p class="social"><a href="#" title="" class="facebook"><i class="fa fa-facebook"></i></a><a href="#" title="" class="twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="gplus"><i class="fa fa-google-plus"></i></a><a href="#" title="" class="instagram"><i class="fa fa-instagram"></i></a><a href="#" title="" class="email"><i class="fa fa-envelope"></i></a></p>
-              </div>
+            <div class="day-night s-icon outer-shadow hover-in-shadow">
+                <i class="fas"></i>
             </div>
-          </div>
+            <h4>Theme Colors</h4>
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            </div>
         </div>
-      </div>
-    </section>
-    <div id="map"></div>
-    <footer style="background-color: #111;">
-      <div class="container"> 
-        <div class="row copyright">
-          <div class="col-md-6">
-            <p class="mb-md-0 text-center text-md-left">@2021 MacroCompany Inc</p>
-          </div>
-          <div class="col-md-6">
-            <p class="credit mb-md-0 text-center text-md-right"> <a href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form"></a></p>
-
-            <!-- Please do not remove the backlink to us. It is part of the licence conditions. Thanks for understanding :)-->
-          </div>
-        </div>
-      </div>
-    </footer>
-
-
-
-
-    <!-- JavaScript files-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
-    <script src="vendor/lightbox2/js/lightbox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
-    <script src="js/front.js"></script>
-  </body>
+        <!-- style switcher end - for demo purposes only -->
+        <!-- jquery script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- email script -->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <!-- main js -->
+        <script src="js/main.js"></script>
+        <!-- style switcher js -->
+        <script src="js/style-switcher.js"></script>
+        <!-- email values -->
+        <script>
+            function sendMail(){
+                // smtp.Credentials = new System.Net.NetworkCredential("bhavyajoshi2000@gmail.com", "Stuart@2022");
+                // smtp.EnableSsl = true;
+                // smtp.UseDefaultCredentials = false;
+                var name = $('#name').val();
+                var email = $('#email').val();
+                var subject = $('#subject').val();
+                var message = $('#message').val();
+                var bodyOfEmail = 'Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message;
+            
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "dipak100kadam@gmail.com",
+            Password : "KADAM@100k",
+            To : 'dipak100kadam@gmail.com',
+            From : "dipak100kadam@gmail.com",
+            Subject : "New mail on contact form from: "+name,
+            Body :bodyOfEmail
+        }).then(
+        message => {
+            if(message == 'OK'){
+                alert("Thank You! Your email has been successfully sent")
+            }
+            else{
+                alert("An error occured. Please try again later!")
+            }
+        }
+        );
+        document.getElementById("myForm").reset();
+    }
+        </script>
+    </body>
 </html>
