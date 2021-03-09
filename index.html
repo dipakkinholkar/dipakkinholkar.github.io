@@ -900,38 +900,11 @@
         <!-- style switcher js -->
         <script src="js/style-switcher.js"></script>
         <!-- email values -->
-        <script>
-            function sendMail(){
-                // smtp.Credentials = new System.Net.NetworkCredential("bhavyajoshi2000@gmail.com", "Stuart@2022");
-                // smtp.EnableSsl = true;
-                // smtp.UseDefaultCredentials = false;
-                var name = $('#name').val();
-                var email = $('#email').val();
-                var subject = $('#subject').val();
-                var message = $('#message').val();
-                var bodyOfEmail = 'Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message;
-            
-            Email.send({
-            Host : "smtp.gmail.com",
-            Username : "dipak1275kadam@gmail.com",
-            Password : "",
-            To : 'dipak1275kadam@gmail.com',
-            From : "dipak1275kadam@gmail.com",
-            Subject : "New mail on contact form from: "+name,
-            Body :bodyOfEmail
-        }).then(
-        message => {
-            if(message == 'OK'){
-                alert("Thank You! Your email has been successfully sent")
-            }
-            else{
-                alert("An error occured. Please try again later!")
-            }
-        }
-        );
-        document.getElementById("myForm").reset();
-    }
-        </script>
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <script>
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    formbutton("create", {action: "https://formspree.io/f/xoqpgvpl"})
+  </script>
     </body>
 </html>
 
